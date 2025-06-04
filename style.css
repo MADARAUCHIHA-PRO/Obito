@@ -1,0 +1,345 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d001a;
+  color: #e0d5ff;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  background: #330066;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #a875ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #a875ff;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #2d004d, #4d0080);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #a875ff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #d3b3ff;
+}
+
+/* Feature Boxes */
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-box {
+  background: #1a0033;
+  padding: 20px 30px;
+  border: 2px solid #a875ff;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #a875ff;
+}
+
+/* Price Cards */
+.price-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.price-card {
+  background: #29004d;
+  padding: 30px;
+  border-radius: 15px;
+  width: 280px;
+  border: 2px solid #a875ff;
+}
+
+.price-card h3 {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.price-card p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.price-card button {
+  background: #a875ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Course Section */
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.course-box {
+  background: #200040;
+  padding: 25px;
+  border: 2px solid #a875ff;
+  border-radius: 12px;
+  width: 280px;
+}
+
+.course-box h3 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.course-box ul {
+  list-style: disc;
+  text-align: left;
+  margin: 10px 0 20px 20px;
+}
+
+.course-box button {
+  background: #a875ff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Contact */
+#contact a {
+  color: #a875ff;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a001f;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+.menu-toggle {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+#navLinks {
+  transition: max-height 0.4s ease;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background-color: #330066;
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .nav-links.open {
+    max-height: 300px;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+.pricing-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #0d001a;
+}
+
+.section-header h2 {
+  color: #00ffff;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.pricing-box {
+  max-width: 400px;
+  margin: auto;
+  background: #000;
+  border: 2px solid #ff00ff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px #ff00ff;
+}
+
+.pricing-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px dashed #999;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.pricing-row:last-child {
+  border-bottom: none;
+}
+
+.highlighted-price {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.dm-btn {
+  margin-top: 30px;
+}
+
+.dm-btn a {
+  display: inline-block;
+  background: #ff00ff;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px #ff00ff;
+  transition: 0.3s;
+}
+
+.dm-btn a:hover {
+  background: #ff33ff;
+  box-shadow: 0 0 25px #ff00ff;
+}
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.gaming-logo {
+  width: 120px;
+  height: 120px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: #1a1a2e;
+  color: #a259ff;
+  font-size: 0.9em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: floatLogo 3s ease-in-out infinite;
+  text-shadow: 0 0 10px #a259ff, 0 0 20px #a259ff;
+  box-shadow: 0 0 15px #a259ff, 0 0 30px #a259ff;
+  transition: transform 0.3s ease;
+}
+
+
+
+@keyframes floatLogo {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+
+
+
+
+
+
+
+
+
